@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Agustín Expósito — Product imaging con IA</title>
+  <meta name="description" content="Portfolio de generación de imágenes con IA: mismo producto en múltiples escenas, fidelidad de materiales. Stable Diffusion, ControlNet, IP-Adapter." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <p class="eyebrow">Portfolio · Generación de imágenes con IA</p>
+      <h1>Agustín Expósito</h1>
+      <p class="role">Especialista en product imaging generativo</p>
+      <p class="tagline">Mismo producto, múltiples escenas, fidelidad de materiales.</p>
+      <p class="tools">Stable Diffusion · ControlNet · IP-Adapter · Regional Prompter · PAG · Hi-Res</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="series" id="serie-a" aria-labelledby="serie-a-title">
+      <div class="wrap">
+        <h2 id="serie-a-title">Serie A — Sofá terciopelo esmeralda</h2>
+        <p class="series-lead">
+          Foto base real del producto. Las escenas de campaña se generan con img2img + ControlNet + IP-Adapter
+          preservando color, nap del terciopelo, piping y silueta.
+        </p>
+
+        <figure class="base-block">
+          <img src="images/serie-a/00_base.jpg" alt="Sofá mid-century en terciopelo verde esmeralda — foto base del producto" width="1600" height="1067" />
+          <figcaption>Base del producto (referencia). Stock Unsplash — ver atribución en footer.</figcaption>
+        </figure>
+
+        <div class="shot-grid">
+          <figure class="shot pending" data-src="images/serie-a/01_living_dia.jpg" data-label="Living diurno">
+            <div class="pending-label">
+              <strong>Living diurno</strong>
+              <span>Pendiente — en producción</span>
+            </div>
+          </figure>
+          <figure class="shot pending" data-src="images/serie-a/02_living_noche.jpg" data-label="Living noche">
+            <div class="pending-label">
+              <strong>Living noche</strong>
+              <span>Pendiente — en producción</span>
+            </div>
+          </figure>
+          <figure class="shot pending" data-src="images/serie-a/03_loft.jpg" data-label="Loft industrial">
+            <div class="pending-label">
+              <strong>Loft / industrial</strong>
+              <span>Pendiente — en producción</span>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="series" id="serie-b" aria-labelledby="serie-b-title">
+      <div class="wrap">
+        <h2 id="serie-b-title">Serie B — Sillón tejido taupe</h2>
+        <p class="series-lead">
+          Segunda pieza con trama de tela visible (anti-smear). Mismo enfoque: producto real como base,
+          ambientes distintos sin alterar forma ni costura.
+        </p>
+
+        <figure class="base-block">
+          <img src="images/serie-b/00_base.jpg" alt="Sillón giratorio en tela taupe de trama visible — foto base del producto" width="1600" height="2000" />
+          <figcaption>Base del producto (referencia). Stock Unsplash — ver atribución en footer.</figcaption>
+        </figure>
+
+        <div class="shot-grid">
+          <figure class="shot pending" data-src="images/serie-b/01_lectura.jpg" data-label="Rincón lectura">
+            <div class="pending-label">
+              <strong>Rincón lectura</strong>
+              <span>Pendiente — en producción</span>
+            </div>
+          </figure>
+          <figure class="shot pending" data-src="images/serie-b/02_dormitorio.jpg" data-label="Dormitorio">
+            <div class="pending-label">
+              <strong>Dormitorio / soft</strong>
+              <span>Pendiente — en producción</span>
+            </div>
+          </figure>
+          <figure class="shot pending" data-src="images/serie-b/03_showroom.jpg" data-label="Showroom">
+            <div class="pending-label">
+              <strong>Showroom</strong>
+              <span>Pendiente — en producción</span>
+            </div>
+          </figure>
+        </div>
+
+        <div class="materiales">
+          <h3>Referencia de tejido</h3>
+          <img src="images/materiales/ref_tejido.jpg" alt="Referencia de trama de tela en sillón mostaza" width="800" height="1000" />
+        </div>
+      </div>
+    </section>
+
+    <section class="method" id="metodo" aria-labelledby="metodo-title">
+      <div class="wrap">
+        <h2 id="metodo-title">Método</h2>
+        <p class="method-lead">
+          Workflow orientado a fidelidad de producto, no a inventar el mueble desde cero.
+        </p>
+        <ul>
+          <li>Partir de foto real del producto (img2img / inpainting).</li>
+          <li>Fijar silueta y estructura con ControlNet (depth / canny).</li>
+          <li>Preservar identidad visual con IP-Adapter (color, tela, forma).</li>
+          <li>Separar producto vs. ambiente con Regional Prompter; PAG + Hi-Res para detalle de trama.</li>
+          <li>Descartar o retocar lo que la IA deforma (patas, costuras, smearing).</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto" aria-labelledby="contacto-title">
+      <div class="wrap">
+        <h2 id="contacto-title">Contacto</h2>
+        <p>
+          Disponible para trabajo freelance / por proyecto. Mendoza, Argentina.
+        </p>
+        <p>
+          Trabajo con Stable Diffusion, ControlNet, IP-Adapter, Regional Prompter, PAG y Hi-Res.
+          Experiencia previa generando assets con SD. Foco: integrar el producto real en campañas de ambiente
+          sin alterar tela, forma ni terminaciones.
+        </p>
+        <ul class="links">
+          <li><a href="mailto:aexpositomarsollier@gmail.com">aexpositomarsollier@gmail.com</a></li>
+          <li><a href="https://linkedin.com/in/agustin-damian-exposito-marsollier" rel="noopener noreferrer" target="_blank">LinkedIn</a></li>
+          <li><a href="https://github.com/AguExposito" rel="noopener noreferrer" target="_blank">GitHub</a></li>
+          <li><a href="tel:+5492615634573">+54 9 261 563 4573</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>
+        Demos con fotos stock de referencia bajo licencia Unsplash.
+        No afiliado a Sufa Muebles.
+      </p>
+      <p>© Agustín Damián Expósito Marsollier</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      document.querySelectorAll(".shot[data-src]").forEach(function (fig) {
+        var src = fig.getAttribute("data-src");
+        if (!src) return;
+        var img = new Image();
+        img.alt = fig.getAttribute("data-label") || "Escena generada";
+        img.onload = function () {
+          fig.classList.remove("pending");
+          fig.insertBefore(img, fig.firstChild);
+        };
+        img.onerror = function () {
+          /* keep pending placeholder */
+        };
+        img.src = src;
+      });
+    })();
+  </script>
+</body>
+</html>

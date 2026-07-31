@@ -18,7 +18,7 @@ images/serie-a/01_living_dia.jpg
 images/serie-a/02_living_noche.jpg
 images/serie-a/03_loft.jpg
 images/serie-b/01_lectura.jpg
-images/serie-b/02_dormitorio.jpg
+images/serie-b/02_comedor.jpg
 images/serie-b/03_showroom.jpg
 ```
 

@@ -244,22 +244,38 @@ a:hover {
   list-style: none;
 }
 
-/* Materiales strip */
-.materiales {
-  padding: 2.5rem 0 0;
+/* Trabajos previos */
+.previos-grid {
+  grid-template-columns: 1fr;
 }
 
-.materiales h3 {
-  margin: 0 0 0.75rem;
-  font-family: var(--serif);
-  font-size: 1.15rem;
-  font-weight: 600;
+@media (min-width: 720px) {
+  .previos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.materiales img {
-  max-width: 18rem;
-  border-radius: 2px;
+.previo {
+  margin: 0;
   border: 1px solid var(--line);
+  border-radius: 2px;
+  overflow: hidden;
+  background: var(--bg-deep);
+}
+
+.previo img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.previo figcaption {
+  padding: 0.75rem 1rem;
+  font-family: var(--serif);
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  border-top: 1px solid var(--line);
+  background: rgba(243, 239, 232, 0.85);
 }
 
 /* Footer */

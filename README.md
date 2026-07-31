@@ -17,12 +17,13 @@ Copiar los JPG generados con estos nombres exactos:
 images/serie-a/01_living_dia.jpg
 images/serie-a/02_living_noche.jpg
 images/serie-a/03_loft.jpg
-images/serie-b/01_lectura.jpg
-images/serie-b/02_dormitorio.jpg
-images/serie-b/03_showroom.jpg
+images/serie-b/00_base.jpg
+images/serie-b/01_mesa_redonda.png
+images/serie-b/02_comedor.png
+images/serie-b/03_editorial.png
 ```
 
-No hace falta editar el HTML: el script carga cada `data-src` y, si existe, reemplaza el placeholder.
+Serie A: el script carga cada `data-src` y, si existe, reemplaza el placeholder. Serie B ya incluye las escenas en el HTML.
 
 Luego:
 

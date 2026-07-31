@@ -144,6 +144,12 @@ a:hover {
   max-height: 28rem;
 }
 
+.base-block--contain img {
+  object-fit: contain;
+  max-height: 32rem;
+  margin-inline: auto;
+}
+
 .shot-grid {
   display: grid;
   gap: 1rem;
@@ -170,6 +176,16 @@ a:hover {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+  background: var(--bg-deep);
+}
+
+.shot figcaption {
+  margin: 0;
+  padding: 0.65rem 0.85rem;
+  font-family: var(--serif);
+  font-size: 0.95rem;
+  border-top: 1px solid var(--line);
+  background: rgba(243, 239, 232, 0.9);
 }
 
 .shot.pending {

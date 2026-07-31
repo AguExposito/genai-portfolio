@@ -60,35 +60,29 @@
 
     <section class="series" id="serie-b" aria-labelledby="serie-b-title">
       <div class="wrap">
-        <h2 id="serie-b-title">Serie B — Sillón tejido taupe</h2>
+        <h2 id="serie-b-title">Serie B — Silla cáscara beige</h2>
         <p class="series-lead">
-          Segunda pieza con trama de tela visible (anti-smear). Mismo enfoque: producto real como base,
-          ambientes distintos sin alterar forma ni costura.
+          Misma silla cáscara tapizada en distintos contextos, preservando silueta, trama de tela y patas
+          de madera. Generación con img2img + ControlNet + IP-Adapter y retoque cuando hace falta.
         </p>
 
-        <figure class="base-block">
-          <img src="images/serie-b/00_base.jpg" alt="Sillón giratorio en tela taupe de trama visible — foto base del producto" width="1600" height="2000" />
-          <figcaption>Base del producto (referencia). Stock Unsplash — ver atribución en footer.</figcaption>
+        <figure class="base-block base-block--contain">
+          <img src="images/serie-b/00_base.jpg" alt="Silla cáscara tapizada beige con patas de madera clara — foto base del producto" width="900" height="1200" />
+          <figcaption>Base del producto (foto de referencia; no generada con IA).</figcaption>
         </figure>
 
         <div class="shot-grid">
-          <figure class="shot pending" data-src="images/serie-b/01_lectura.jpg" data-label="Rincón lectura">
-            <div class="pending-label">
-              <strong>Rincón lectura</strong>
-              <span>Pendiente — en producción</span>
-            </div>
+          <figure class="shot">
+            <img src="images/serie-b/01_mesa_redonda.png" alt="Silla cáscara beige en mesa redonda junto a ventana" width="1600" height="1067" />
+            <figcaption>Mesa redonda</figcaption>
           </figure>
-          <figure class="shot pending" data-src="images/serie-b/02_dormitorio.jpg" data-label="Dormitorio">
-            <div class="pending-label">
-              <strong>Dormitorio / soft</strong>
-              <span>Pendiente — en producción</span>
-            </div>
+          <figure class="shot">
+            <img src="images/serie-b/02_comedor.png" alt="Silla cáscara beige en comedor residencial" width="1600" height="1067" />
+            <figcaption>Comedor</figcaption>
           </figure>
-          <figure class="shot pending" data-src="images/serie-b/03_showroom.jpg" data-label="Showroom">
-            <div class="pending-label">
-              <strong>Showroom</strong>
-              <span>Pendiente — en producción</span>
-            </div>
+          <figure class="shot">
+            <img src="images/serie-b/03_editorial.png" alt="Silla cáscara beige en viñeta editorial de catálogo" width="900" height="1200" />
+            <figcaption>Viñeta editorial</figcaption>
           </figure>
         </div>
       </div>
@@ -133,6 +127,7 @@
           <li>Fijar silueta y estructura con ControlNet (depth / canny).</li>
           <li>Preservar identidad visual con IP-Adapter (color, tela, forma).</li>
           <li>Separar producto vs. ambiente con Regional Prompter; PAG + Hi-Res para detalle de trama.</li>
+          <li>Retoque en Photoshop cuando haga falta (máscaras, limpieza de bordes, color, contacto con piso), al inicio o entre pases de generación.</li>
           <li>Descartar o retocar lo que la IA deforma (patas, costuras, smearing).</li>
         </ul>
       </div>
@@ -162,8 +157,8 @@
   <footer class="site-footer">
     <div class="wrap">
       <p>
-        Demos con fotos stock de referencia bajo licencia Unsplash.
-        Portfolio personal de product imaging con IA — no afiliado a marcas de muebles.
+        Fotos base de referencia; escenas de campaña generadas con IA.
+        Portfolio personal de product imaging con IA — no afiliado a marcas.
       </p>
       <p>© Agustín Damián Expósito Marsollier</p>
     </div>

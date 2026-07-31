@@ -140,11 +140,6 @@ a:hover {
   width: 100%;
   border-radius: 2px;
   background: var(--bg-deep);
-  object-fit: cover;
-  max-height: 28rem;
-}
-
-.base-block--contain img {
   object-fit: contain;
   max-height: 32rem;
   margin-inline: auto;
